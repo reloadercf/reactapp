@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import MainComponent from "./MainComponent";
 import MainForm from "./MainForm";
+import Slide from "./Slide";
 
 class HomePage extends Component {
 
@@ -43,6 +44,7 @@ class HomePage extends Component {
         let {user, obj, newHobbie} = this.state;
         return (
             <div>
+                <Slide />
                 <MainForm
                     handleText={this.handleText}
                     newHobbie={newHobbie}
